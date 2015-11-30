@@ -5,7 +5,7 @@
   "main": "index.js",
    "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrisbing/gulp-excel2json.git"
+    "url": "git+https://github.com/kirakishin/gulp-i18n-excel2json.git"
   },
   "files": [
     "index.js"
@@ -26,8 +26,8 @@
     "excel"
   ],
   "author": {
-    "name": "chris",
-    "email": "bingyuwuhen@gmail.com"
+    "name": "kirakishin (fork of chris bingyuwuhen@gmail.com)",
+    "email": "kirakishin@bkm.me"
   },
   "license": "MIT",
   "_id": "gulp-excel2json@1.0.2",
