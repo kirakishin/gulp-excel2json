@@ -15,9 +15,9 @@ module.exports = function (options) {
     }
     var withNameSpaces = (savePath.indexOf('__ns__') !== -1);
 
-// stringifies JSON and makes it pretty if asked
+// stringifies JSON and makes it human-readable if asked
 function stringify(jsonObj) {
-    if (true || options.pretty) {
+    if (true || options.readable) {
         return JSON.stringify(jsonObj, null, 4);
     } else {
         return JSON.stringify(jsonObj);
