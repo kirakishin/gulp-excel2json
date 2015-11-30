@@ -1,25 +1,26 @@
-# gulp-excel2json
+# gulp-i18n-excel2json
 > Excel (XLSX/XLS) to json.
 
 
 ## Usage
-First, install `gulp-excel2json` as a development dependency:
+First, install `gulp-i18n-excel2json` as a development dependency:
 
 ```shell
-> npm install --save-dev gulp-excel2json
+> npm install --save-dev gulp-i18n-excel2json
 ```
 
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var excel2json = require('gulp-excel2json');
+var i18n-excel2json = require('gulp-i18n-excel2json');
 
-gulp.task('copy', function() {
+gulp.task('i18n', function() {
     gulp.src('config/**.xlsx')
         .pipe(excel2json({
-            headRow: 1,
-            valueRowStart: 3,
-            trace: true
+            destFile : '__lng__/operateurTest.__ns__-__lng__.json',
+            pretty: true,
+            colKey: 'A',
+            colValArray: ['B', 'C'],
         }))
         .pipe(gulp.dest('build'))
 });
@@ -28,7 +29,7 @@ gulp.task('copy', function() {
 
 ## API
 
-### excel2json([options])
+### i18n-excel2json([options])
 
 #### options.headRow
 Type: `number`
