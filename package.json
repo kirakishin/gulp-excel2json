@@ -1,5 +1,5 @@
 {
-  "name": "gulp-excel2json",
+  "name": "gulp-i18n-excel2json",
   "version": "1.0.5",
   "description": "Excel (XLSX/XLS) to json",
   "main": "index.js",
