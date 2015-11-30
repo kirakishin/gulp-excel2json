@@ -83,7 +83,7 @@ var i18nExcel2json = require('gulp-i18n-excel2json');
 gulp.task('i18n', function() {
     gulp.src('config/**.xlsx')
         .pipe(i18nExcel2json({
-            destFile : '__lng__/operateurTest.__ns__-__lng__.json',
+            destFile : '__lng__/translation.__ns__.json',
             readable: true,
             colKey: 'A',
             colValArray: ['B', 'C'],
@@ -145,4 +145,4 @@ Default: `1`
 Excel line representing the header with the lang key for each translation.
 
 ## License
-MIT &copy; Chris Forked by Kirakishin
+MIT &copy; Kirakishin (fork from Chris)
