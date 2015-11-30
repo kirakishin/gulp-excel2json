@@ -78,13 +78,13 @@ First, install `gulp-i18n-excel2json` as a development dependency:
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var i18n-excel2json = require('gulp-i18n-excel2json');
+var i18nExcel2json = require('gulp-i18n-excel2json');
 
 gulp.task('i18n', function() {
     gulp.src('config/**.xlsx')
-        .pipe(i18n-excel2json({
+        .pipe(i18nExcel2json({
             destFile : '__lng__/operateurTest.__ns__-__lng__.json',
-            pretty: true,
+            readable: true,
             colKey: 'A',
             colValArray: ['B', 'C'],
             rowStart: 2,
@@ -106,10 +106,11 @@ Default: `locales/__lng__/__ns__.json`
 
 The filenames path of output.
 
-__lng__ : replaced by current lang
-__ns__ : replace by current namespace (each top level of i18n keys)
+`__lng__` : replaced by current lang
 
-#### options.pretty
+`__ns__`: replace by current namespace (each top level of i18n keys)
+
+#### options.readable
 Type: `boolean`
 
 Default: `true`
@@ -139,7 +140,6 @@ Start to output json after the specified excel line.
 
 #### options.rowHeader
 Type: `number`
-
 Default: `1`
 
 Excel line representing the header with the lang key for each translation.
