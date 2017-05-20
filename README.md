@@ -88,7 +88,8 @@ gulp.task('i18n', function() {
             colKey: 'A',
             colValArray: ['B', 'C'],
             rowStart: 2,
-            rowHeader: 1
+            rowHeader: 1,
+            levelDebug:'info'
         }))
         .pipe(gulp.dest('build'))
 });
@@ -143,6 +144,13 @@ Type: `number`
 Default: `1`
 
 Excel line representing the header with the lang key for each translation.
+
+### options.levelDebug
+
+Type: `string`
+Default: `false`
+
+Debug level for winston ( 'info','debug' .. )
 
 ## License
 MIT &copy; Kirakishin (fork from Chris)
