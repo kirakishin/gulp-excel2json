@@ -89,7 +89,7 @@ gulp.task('i18n', function() {
             colValArray: ['B', 'C'],
             rowStart: 2,
             rowHeader: 1,
-            levelDebug:info
+            levelDebug:'info'
         }))
         .pipe(gulp.dest('build'))
 });
